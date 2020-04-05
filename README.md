@@ -1,3 +1,6 @@
+This fork contains some of the changes by AmedeeBulle, applied to the
+latest version from matthijskooijman:master as of 2020-04-04.
+
 Arduino-LMIC library
 ====================
 This repository contains the IBM LMIC (LoraMAC-in-C) library, slightly

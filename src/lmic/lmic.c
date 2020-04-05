@@ -49,7 +49,9 @@ DEFINE_LMIC;
 
 // Fwd decls.
 static void engineUpdate(void);
+#if !defined(DISABLE_BEACONS)
 static void startScan (void);
+#endif // !DISABLE_BEACONS
 
 
 // ================================================================================
@@ -2047,7 +2049,9 @@ static void engineUpdate (void) {
 #endif // !DISABLE_JOIN
 
     ostime_t now    = os_getTime();
+#if !defined(DISABLE_BEACONS)
     ostime_t rxtime = 0;
+#endif // !DISABLE_BEACONS
     ostime_t txbeg  = 0;
 
 #if !defined(DISABLE_BEACONS)
